@@ -58,7 +58,7 @@ public class Login extends HttpServlet {
 			out.print("Username and Password does not match");
 			RequestDispatcher rd = request.getRequestDispatcher("/login.html");
 			rd.include(request, response);
-		}//This is validation code
+		}
 		
 		
 		doGet(request, response);

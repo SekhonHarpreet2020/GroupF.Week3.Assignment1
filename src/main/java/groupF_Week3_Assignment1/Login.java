@@ -61,7 +61,6 @@ public class Login extends HttpServlet {
 		}//This is validation code
 		
 		
-		
 		doGet(request, response);
 	}
 

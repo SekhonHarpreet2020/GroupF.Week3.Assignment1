@@ -10,11 +10,11 @@
 <h2>Score Calculator</h2>
 	<form action="ScoreCalculator" method="post">
 		Enter name: <input type="text" name="studentName"/><br/><br/>
-		Enter score of English: <input type="text" name="english"/><br/><br/>
-		Enter score of math: <input type="text" name="math"/><br/><br/>
-		Enter score of Science: <input type="text" name="science"/><br/><br/>
-		Enter score of Drawing: <input type="text" name="drawing"/><br/><br/>
-		Enter score of Geography: <input type="text" name="geography"/><br/><br/>
+		Enter score of Web: <input type="text" name="web"/><br/><br/>
+		Enter score of .NET: <input type="text" name="net"/><br/><br/>
+		Enter score of JavaEE: <input type="text" name="jee"/><br/><br/>
+		Enter score of Database: <input type="text" name="db"/><br/><br/>
+		Enter score of Android: <input type="text" name="android"/><br/><br/>
 		<input type="submit" value="Calculate" name="buttonValue"/>
 	</form>
 </body>

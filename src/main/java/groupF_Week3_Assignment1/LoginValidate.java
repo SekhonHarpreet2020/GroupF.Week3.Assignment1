@@ -53,8 +53,8 @@ public class LoginValidate extends HttpServlet {
 			}
 			else if(buttonValue.equals("Login Cookies"))
 			{
-				//LoginCookiesServlet object = new LoginCookiesServlet();
-				//object.doPost(request, response);
+				LoginCookiesServlet1 object = new LoginCookiesServlet1();
+				object.doPost(request, response);
 			}
 			else
 			{

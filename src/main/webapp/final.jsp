@@ -10,7 +10,7 @@
 <body>
 <img alt="Logo" src="schoollogo.jpg" width="250" height="220"  />
 
-<%
+<%-- <%
 int m1=Integer.parseInt(request.getParameter("english"));
 int m2=Integer.parseInt(request.getParameter("math"));
 int m3=Integer.parseInt(request.getParameter("science"));
@@ -109,13 +109,18 @@ else if(avg >= 0 && avg<=49){
     <%
     out.println(" your grade point is 0.0");
 }
-%>
+%> --%>
+
+<h3> grade is <%= request.getParameter("grade") %></h3>
+<h3> min is <%= request.getParameter("min") %></h3>
+<h3> max is <%= request.getParameter("max") %></h3>
+
 <h1>Group members::</h1>
-<h6>shilpy</h6>
-<h6>sophiya</h6>
-<h6>sumandeep kaur</h6>
-<h6>Faruk</h6>
-<h6>Harpreet kaur</h6>
-<h6>Monica</h6>
+<h6>Shilpy Nanda C0796818</h6>
+<h6>Sophiya Maharjan C0795243</h6>
+<h6>Sumandeep Kaur C0784324</h6>
+<h6>Faruk Batur C0808880 </h6>
+<h6>Harpreet Kaur C0793371</h6>
+<h6>Monica Ranjan Dayal C0805547  </h6>
 </body>
 </html>

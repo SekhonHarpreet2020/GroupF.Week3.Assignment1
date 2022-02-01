@@ -3,6 +3,7 @@ package groupF_Week3_Assignment1;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -29,7 +30,9 @@ public class ScoreCalculator extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		//response.getWriter().append("Served at: ").append(request.getContextPath());
+		
+	    
 	}
 
 	/**
@@ -37,7 +40,7 @@ public class ScoreCalculator extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//declaration of variables
-				int subject1, subject2, subject3, subject4, subject5, average;
+				/*int subject1, subject2, subject3, subject4, subject5, average;
 				String name, grade;
 				
 				//
@@ -118,12 +121,15 @@ public class ScoreCalculator extends HttpServlet {
 					 * */
 					//response.sendRedirect(request.getContextPath() + "/final.jsp");
 
-			  	}
-			    catch (NumberFormatException ex){
-			    	ex.printStackTrace();
-			   	}
+			 // 	}
+			  //  catch (NumberFormatException ex){
+			//    	ex.printStackTrace();
+			   //	}
 				
-		doGet(request, response);
-	}
+		//doGet(request, response);  
+		RequestDispatcher rd= request.getRequestDispatcher("final.jsp");
+		rd.forward(request, response);
+	    
+	} 
 
 }

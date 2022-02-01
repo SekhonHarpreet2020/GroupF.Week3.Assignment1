@@ -1,10 +1,8 @@
 @charset "ISO-8859-1";
-body
-{
-	  font: 20px;
-	 background-color:pink;
-     color:red;
-	 font-family: Arial, Helvetica, sans-serif;
-	 
-	
+
+body {
+	font: 20px;
+	background-color: pink;
+	color: red;
+	font-family: Arial, Helvetica, sans-serif;
 }

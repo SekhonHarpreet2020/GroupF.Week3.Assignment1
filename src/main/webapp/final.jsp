@@ -1,16 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
-<link rel="stylesheet" type="text/css" href="NewFile.css">  
+<link rel="stylesheet" type="text/css" href="NewFile.css">
 </head>
 <body>
-<img alt="Logo" src="schoollogo.jpg" width="250" height="220"  />
+	<img alt="Logo" src="schoollogo.jpg" width="250" height="220" />
 
-<%-- <%
+	<%-- <%
 int m1=Integer.parseInt(request.getParameter("english"));
 int m2=Integer.parseInt(request.getParameter("math"));
 int m3=Integer.parseInt(request.getParameter("science"));
@@ -111,16 +111,22 @@ else if(avg >= 0 && avg<=49){
 }
 %> --%>
 
-<h3> grade is <%= request.getParameter("grade") %></h3>
-<h3> min is <%= request.getParameter("min") %></h3>
-<h3> max is <%= request.getParameter("max") %></h3>
+	<h3>
+		grade is
+		<%=request.getParameter("grade")%></h3>
+	<h3>
+		min is
+		<%=request.getParameter("min")%></h3>
+	<h3>
+		max is
+		<%=request.getParameter("max")%></h3>
 
-<h1>Group members::</h1>
-<h6>Shilpy Nanda C0796818</h6>
-<h6>Sophiya Maharjan C0795243</h6>
-<h6>Sumandeep Kaur C0784324</h6>
-<h6>Faruk Batur C0808880 </h6>
-<h6>Harpreet Kaur C0793371</h6>
-<h6>Monica Ranjan Dayal C0805547  </h6>
+	<h1>Group members::</h1>
+	<h6>Shilpy Nanda C0796818</h6>
+	<h6>Sophiya Maharjan C0795243</h6>
+	<h6>Sumandeep Kaur C0784324</h6>
+	<h6>Faruk Batur C0808880</h6>
+	<h6>Harpreet Kaur C0793371</h6>
+	<h6>Monica Ranjan Dayal C0805547</h6>
 </body>
 </html>

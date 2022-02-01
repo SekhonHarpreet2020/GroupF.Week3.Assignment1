@@ -8,19 +8,19 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
+import javax.servlet.http.HttpSession;
 
 /**
- * Servlet implementation class LoginValidate
+ * Servlet implementation class LoginSessionServlet
  */
-@WebServlet("/LoginValidate")
-public class LoginValidate extends HttpServlet {
+@WebServlet("/LoginSessionServlet")
+public class LoginSessionServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public LoginValidate() {
+    public LoginSessionServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -38,36 +38,25 @@ public class LoginValidate extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		try {
-			response.setContentType("text/html");
-			PrintWriter out = response.getWriter();
-			
-			String buttonValue;
-			buttonValue = request.getParameter("buttonValue");
-			
-			out.print(buttonValue);
-			if(buttonValue.equals("Login Request Dispacther"))
-			{
-				LoginRequestDispatcherServlet1 object = new LoginRequestDispatcherServlet1();
-				object.doPost(request, response);
-			}
-			else if(buttonValue.equals("Login Cookies"))
-			{
-				//LoginCookiesServlet object = new LoginCookiesServlet();
-				//object.doPost(request, response);
-			}
-			else
-			{
-				LoginSessionServlet object = new LoginSessionServlet();
-				object.doPost(request, response);				
-			}
-	}
-		catch(Exception e)
-		{
-			System.out.print(e);
-		}
-
-		doGet(request, response);
+		try{  
+			  
+	        response.setContentType("text/html");  
+	        PrintWriter out = response.getWriter();  
+	          
+	        String n=request.getParameter("username");  
+	        out.print("Welcome "+n);  
+	          
+	        HttpSession session=request.getSession();  
+	        session.setAttribute("uname",n);  
+	  
+	        out.print("<br/><a href='LoginSessionsServlet1'>visit</a>");  
+	                  
+	        out.close();  
+	  
+	        }
+		
+		catch(Exception e){System.out.println(e);}  
+	    } 
 	}
 
-}
+

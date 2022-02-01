@@ -22,7 +22,7 @@ int total =m1+m2+m3+m4+m5;
 out.println("total  is: " + total);
 int avg=total/5;  %><br><br/>
 <%
-out.println("Average is:\n" + avg);
+out.println("Average is:\n" + avg);  // showing average
 %><br/>
 <% 
 int[] nums={m1,m2,m3,m4,m5};
@@ -110,7 +110,7 @@ else if(avg >= 0 && avg<=49){
     out.println(" your grade point is 0.0");
 }
 %>
-<h1>Group members</h1>
+<h1>Group members::</h1>
 <h6>shilpy</h6>
 <h6>sophiya</h6>
 <h6>sumandeep kaur</h6>

@@ -127,6 +127,7 @@ public class ScoreCalculator extends HttpServlet {
 			   //	}
 				
 		//doGet(request, response);  
+		// it sends request to final.jsp 
 		RequestDispatcher rd= request.getRequestDispatcher("final.jsp");
 		rd.forward(request, response);
 	    

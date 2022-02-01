@@ -1,0 +1,16 @@
+@charset "ISO-8859-1";
+
+body
+{
+	background-color:lightblue;
+}
+h1 {  
+    color: navy;  
+    margin-left: 950px;  
+}
+h6
+{
+	margin-left:940px;
+	color : navy;
+	font-size: 15px;
+}   

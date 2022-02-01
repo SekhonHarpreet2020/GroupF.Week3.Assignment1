@@ -14,6 +14,13 @@ import javax.servlet.http.HttpSession;
 /**
  * Servlet implementation class LoginSessionsServlet1
  */
+
+
+
+/**
+ * @author Monica
+ * @Date Jan 31 2022
+ */
 @WebServlet("/LoginSessionsServlet1")
 public class LoginSessionsServlet1 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
